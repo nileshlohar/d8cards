@@ -1,0 +1,6 @@
+name: D8Cards Day 03
+type: module
+description: 'D8Cards Day 03: Building Configuration forms'
+package: Custom
+core: 8.x
+configure: d8cards_day03form
