@@ -1,0 +1,53 @@
+id: movies
+label: Movies
+
+migration_group: movies
+migration_tags:
+  - CSV
+source:
+  plugin: csv
+  path: public://csv_files/movies.csv
+  header_row_count: 1
+  keys:
+    - id
+  column_name:
+    0:
+      id: ID
+    1:
+      title: Title
+    2:
+      plot: Plot
+    3:
+      actors: Actors
+    4:
+      genre: Genre
+process:
+  type:
+    plugin: default_value
+    default_value: movie
+  title: title
+  field_plot: plot
+  field_actor:
+    -
+      plugin: explode
+      source: actors
+      delimiter: ','
+    -
+      plugin: migration
+      migration: actors
+  field_genre:
+    -
+      plugin: explode
+      source: genre
+      delimiter: '|'
+destination:
+  plugin: entity:node
+migration_dependencies:
+  required:
+    - actors
+dependencies:
+  module:
+    - d8cards_day04
+  enforced:
+    module:
+      - d8cards_day04

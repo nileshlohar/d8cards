@@ -1,0 +1,29 @@
+id: actors
+label: Actors
+migration_group: movies
+migration_tags:
+  - CSV
+source:
+  plugin: csv
+  path: public://csv_files/actors.csv
+  header_row_count: 1
+  keys:
+    - id
+  column_name:
+    0:
+      id: ID
+    1:
+      name: Name
+process:
+  type:
+    plugin: default_value
+    default_value: actor
+  title: name
+destination:
+  plugin: entity:node
+dependencies:
+  module:
+    - d8cards_day04
+  enforced:
+    module:
+      - d8cards_day04

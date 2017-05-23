@@ -1,0 +1,9 @@
+name: D8Cards Day 04
+type: module
+description: 'Day 04 - Migration 101'
+package: D8 cards
+core: 8.x
+dependencies:
+  - migrate_source_csv
+  - migrate_plus
+  - migrate_tools
