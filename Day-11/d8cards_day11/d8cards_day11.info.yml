@@ -1,0 +1,5 @@
+name: d8cards_day11
+type: module
+description: Day 11 ­ Creating a Custom D8 Content Entity Type
+core: 8.x
+package: D8 cards

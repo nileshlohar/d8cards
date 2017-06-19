@@ -1,0 +1,14 @@
+{
+  "name": "drupal/d8cards_day11",
+  "type": "drupal-module",
+  "description": "Day 11 ­ Creating a Custom D8 Content Entity Type",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/d8cards_day11",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/d8cards_day11",
+    "source": "http://cgit.drupalcode.org/d8cards_day11"
+  },
+  "require": { }
+}
