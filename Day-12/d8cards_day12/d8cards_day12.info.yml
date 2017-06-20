@@ -1,0 +1,14 @@
+name: d8cards_day12
+type: theme
+description: Day 12 ­ Theming 101
+package: D8 cards
+core: 8.x
+libraries:
+  - d8cards_day12/global-styling
+ 
+base theme: stable
+
+regions:
+  sidebar1: Sidebar 1
+  content: Content
+  sidebar2: Sidebar 2
