@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Contains d8cards_day13.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_help().
+ */
+function d8cards_day13_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the d8cards_day13 module.
+    case 'help.page.d8cards_day13':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Day 13 ­ Logging in D8') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_update().
+ */
+function d8cards_day13_node_update(EntityInterface $entity) {
+  \Drupal::logger('d8cards_day13')
+      ->notice('Node with title %title of type %type has been updated.',
+      [
+          '%title' => $entity->label(),
+          '%type' => $entity->bundle(),
+      ]);
+}

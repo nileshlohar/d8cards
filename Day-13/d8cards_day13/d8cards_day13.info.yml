@@ -1,0 +1,5 @@
+name: d8cards_day13
+type: module
+description: Day 13 ­ Logging in D8
+core: 8.x
+package: D8 cards
