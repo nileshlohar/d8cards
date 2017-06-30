@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Contains d8cards_day15.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function d8cards_day15_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the d8cards_day15 module.
+    case 'help.page.d8cards_day15':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Day 15 ­ Creating a Custom Field Formatter') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function d8cards_day15_theme($existing, $type, $theme, $path)
+{
+  return array(
+      'star_field_formatter' => array(
+          'variables' => array('percentage' => NULL),
+          'template' => 'star-field-formatter',
+      ),
+  );
+}

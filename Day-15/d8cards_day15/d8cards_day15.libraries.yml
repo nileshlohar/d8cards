@@ -1,0 +1,4 @@
+star_field_formatter_library:
+  css:
+    theme:
+      css/start-field-formatter.css: {}
