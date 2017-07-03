@@ -1,0 +1,5 @@
+name: d8cards_day17
+type: module
+description: Day 17 ­ Composer in your module to load PHP libraries
+core: 8.x
+package: D8  cards

@@ -1,0 +1,49 @@
+[
+    {
+        "name": "guhelski/forecast-php",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guhelski/forecast-php.git",
+            "reference": "571340a01fb98b9ce8d0ab1c951edf21d2f51e5a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guhelski/forecast-php/zipball/571340a01fb98b9ce8d0ab1c951edf21d2f51e5a",
+            "reference": "571340a01fb98b9ce8d0ab1c951edf21d2f51e5a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2016-10-16T13:09:02+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Guilherme Uhelski",
+                "email": "guilherme@uhelski.org",
+                "homepage": "http://uhelski.org"
+            }
+        ],
+        "description": "Drop dead simple Dark Sky API wrapper in PHP",
+        "keywords": [
+            "dark sky",
+            "darksky",
+            "darksky.net",
+            "forecast",
+            "forecast.io",
+            "weather"
+        ]
+    }
+]

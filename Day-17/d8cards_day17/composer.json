@@ -1,0 +1,16 @@
+{
+  "name": "drupal/d8cards_day17",
+  "type": "drupal-module",
+  "description": "Day 17 ­ Composer in your module to load PHP libraries",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/d8cards_day17",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/d8cards_day17",
+    "source": "http://cgit.drupalcode.org/d8cards_day17"
+  },
+  "require": {
+    "guhelski/forecast-php": "dev-master"
+  }
+}

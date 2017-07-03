@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains d8cards_day17.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function d8cards_day17_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the d8cards_day17 module.
+    case 'help.page.d8cards_day17':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Day 17 ­ Composer in your module to load PHP libraries') . '</p>';
+      return $output;
+
+    default:
+  }
+}
