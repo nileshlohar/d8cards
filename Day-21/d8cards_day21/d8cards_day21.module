@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains d8cards_day21.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function d8cards_day21_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the d8cards_day21 module.
+    case 'help.page.d8cards_day21':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Day 21 ­ Replacing hook_init') . '</p>';
+      return $output;
+
+    default:
+  }
+}

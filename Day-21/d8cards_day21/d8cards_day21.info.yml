@@ -1,0 +1,5 @@
+name: d8cards_day21
+type: module
+description: Day 21 ­ Replacing hook_init
+core: 8.x
+package: D8 cards

@@ -1,0 +1,6 @@
+services:
+  d8cards_day21.allow_access_origin:
+    class: Drupal\d8cards_day21\EventSubscriber\CustomHeaderSubscriber
+    arguments: ['@current_user']
+    tags:
+      - { name: event_subscriber }
